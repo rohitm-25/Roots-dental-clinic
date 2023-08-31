@@ -1,0 +1,45 @@
+body {
+    background: #94C4D9;
+    color:white;
+}
+.image1 img{
+    width:22vh;
+    height:10vh;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    color: black;
+    background-color:  rgba(60,155,185,0.3);
+    width:500px;
+    margin-left: 30%;
+}
+
+p{
+    font-size: 70px;
+    margin-left:1% ;
+}
+
+
+.img{
+    display: flex;
+}
+
+.img img{
+    margin-right: 10%;
+}
+h2{
+    background-color:  rgba(60,155,185,0.3);
+    width:700px;
+    margin-left: 2%;
+    font-size:70px;
+}
+
+h3{
+    background-color:  rgba(60,155,185,0.3);
+    width:1000px;
+    margin-left: 2%;
+    font-size:70px;
+}
+

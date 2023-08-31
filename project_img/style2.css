@@ -1,0 +1,212 @@
+
+    .image1 img{
+            width:22vh;
+            height:10vh;
+            margin-bottom:500px;
+            margin-left:220%;
+    }
+    .image2 img{
+        width: 50vh;
+    height: 50vh;
+    margin-left:-25%;
+    top: 227px;
+    
+    }
+         body { height:100vh; 
+            display: flex;
+             align-items:center; 
+             justify-content:center;
+            }
+     *{padding:0; 
+        margin:0;
+         box-sizing: border-box;
+     } 
+     .container{
+          
+        width: 925px;
+    height: 100vh;
+    left: 576px;
+    top: -15px;
+    
+          display:flex;
+           padding:0 15px; 
+           font-family: 'Poppins', sans-serif;
+            flex-direction: column;
+             justify-content:space-evenly;
+             background: linear-gradient(179.97deg, #94C4D9 36.21%, rgba(148, 196, 217, 0) 146.43%);
+    border-radius: 150px;
+             
+            }
+            .container p
+            {
+                width: 300px;
+    height: 29px;
+    left: 700px;
+    top: 916px;
+    
+    font-family: 'Bodoni 72 Oldstyle';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+                color:white;
+            }
+        .intro-text h2{
+            width: 465px;
+            height: 67px;
+    
+    
+    font-family:'Bodoni 72 oldstyle';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 76px;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    margin-left: 21%;
+        }
+    
+    form{
+         display: flex; 
+         flex-direction: column;
+          justify-content:space-evenly;  
+          width:674px;
+    height: 57px;
+    left: 702px;
+    top: 429px;
+    color: white;
+    margin-top: -50px;
+        }
+    form input{ 
+         font-family:'Bodoni 72 oldstyle';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 36px;
+    
+    color:white;
+    background-color: transparent;
+    border:none;
+    border-bottom:2px solid white;
+    opacity: 0.5;
+        }
+        ::placeholder{color:white}
+                 form button{
+                      
+                       outline: none;
+                         font-family:'Bodoni 72 oldstyle'; 
+                         width: 500px;
+                        height: 91px;
+                        left: 700px;
+                        background: #FFFFFF;
+                        border-radius: 19px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 26px;
+                        line-height: 43px;
+                        display: flex;
+                        align-items: center;
+                        text-transform: capitalize;
+                        color: #94C4D9;
+                        vertical-align: middle;
+                        margin-top:15px ;
+                        margin-left:22%;
+                        } 
+                        form button a{
+                            margin-left: 32%;
+                        }
+                        .signin{
+                            display: flex;
+                            margin-top: -105px;
+                            justify-content:right;
+                        }
+                        .OR p{
+                            width: 108px;
+    height: 36px;
+    left: 987px;
+    top: 353px;
+    margin-left:48%;
+    margin-top:-85px;
+    font-family: Bodoni 72 Oldstyle;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+                        }
+    
+                       .google{
+                        display: flex;}
+                        .google p{
+                        font-family:'Bodoni 72 oldstyle'; 
+                        font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+    
+    
+                        } 
+                        .image3 img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                        .fb{
+                            display: flex;
+                        }
+                        .fb p{
+                        font-family:'Bodoni 72 oldstyle'; 
+                        font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+                        }
+                        .image4 img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                        .form-content span{
+                            font-family:'Bodoni 72 oldstyle'; 
+                            font-style: normal;
+                        font-weight: bold;
+                        font-size: 15px;
+                        line-height: 15px;
+                        color:rgb(151, 4, 4);
+                        }
+                        
+                        .form-content span i{
+                        color:seagreen;}
+                        form span{
+                            font-family:'Bodoni 72 oldstyle'; 
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 15px;
+                            line-height: 15px;
+                            color:rgb(151, 4, 4);
+                            text-align: right;
+                        }
+
+    

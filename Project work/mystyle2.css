@@ -1,0 +1,118 @@
+body {
+    background: #94C4D9;
+    color:white;
+}
+.image1 img{
+    width:22vh;
+    height:10vh;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    background-color:  rgba(60,155,185,0.3);
+    width:500px;
+    margin-left: 30%;
+}
+
+h2{
+    font-size: 50px;
+    text-align:justify;
+    background-color:  rgba(60,155,185,0.3);
+    width:300px;
+    margin-left: 5%;
+}
+
+.img{
+    display: flex;
+}
+
+p{
+    font-size:30px;
+    margin-left:2% ;
+}
+
+.img1{
+    display: flex;
+}
+
+.img2{
+    display: flex;
+}
+
+.img3{
+    display: flex;
+}
+
+.img4{
+    display: flex;
+}
+.img5{
+    display: flex;
+}
+
+.img6{
+    display: flex;
+}
+.img7{
+    display: flex;
+}
+ 
+h3{
+    font-size: 50px;
+    text-align:justify;
+    background-color:  rgba(60,155,185,0.3);
+    width:300px;
+    margin-left: 5%;
+}
+
+h4{
+    font-size: 50px;
+    text-align:justify;
+    background-color:  rgba(60,155,185,0.3);
+    width:200px;
+    margin-left: 5%;
+}
+
+h5{
+    font-size: 50px;
+    text-align:justify;
+    background-color:  rgba(60,155,185,0.3);
+    width:200px;
+    margin-left: 5%;
+}
+h6{
+    font-size: 50px;
+    text-align:justify;
+    background-color:  rgba(60,155,185,0.3);
+    width:300px;
+    margin-left: 5%;
+}
+
+h7{
+    font-size: 50px;
+    text-align:justify;
+    background-color:  rgba(60,155,185,0.3);
+    width:300px;
+    margin-left: 5%;
+}
+
+h8{
+    font-size: 50px;
+    text-align:justify;
+    background-color:  rgba(60,155,185,0.3);
+    width:300px;
+    margin-left: 5%;
+}
+
+h9{
+    font-size: 50px;
+    text-align:justify;
+    background-color:  rgba(60,155,185,0.3);
+    width:300px;
+    margin-left: 5%;
+}
+
+
+
+

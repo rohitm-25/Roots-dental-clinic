@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roots Dental Clinic | Book Appointment</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Rozha+One&display=swap');
+        /* font-family: 'Bodoni Moda', serif;*/
+        .wrapper{
+            background: url('./assets/images/Doctors-bg.png') no-repeat ;
+            background-size: cover;
+            height: 100%;
+            padding: 3em;
+        }
+
+        .wrapper h1{
+            background: #66C0E7;
+            color: white;
+            width: 20%;
+            padding: 1em 3em;
+            margin: 1em 0;
+            text-align: center;
+        }
+
+        form{
+            width: 34%;
+            
+        }
+        .button button{
+            background-color: #66C0E7;
+            width: 106%;
+            padding: 1em 3em;
+            margin: 1em 0;
+            text-align: center;
+            font-family: 'Bodoni Moda', serif;
+            font-size: 1em;
+            cursor:pointer;
+        }
+        .button a{
+            text-decoration: none;
+            color: white;
+        }
+        label{
+            width: 100%;
+            font-family: 'Bodoni Moda', serif;
+            font-size: 1.25em;
+        }
+        input{
+            width: 100%;
+            background: #6B6B6B36;
+            border: 0;
+            height: 3em;
+            margin-bottom: 1.5em;
+            padding: 0 1em;
+        }
+        .form-content span{
+    font-family:'Bodoni 72 oldstyle'; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    color:rgb(151, 4, 4);
+}
+
+.form-content span p{
+    color:seagreen;
+}   
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="./index.html"><img src="./assets/images/logo.png" alt="Roots"></a>
+        <h1>Book Appointment</h1>
+        <form action="post">
+
+            <div class="form-content">
+            <label for="name">Name*</label>
+            <input type="text" id="fullname" name="fullname" onkeyup="validateName()">
+            <span id="name-error"></span></div>
+
+             <div class="form-content">
+                <label for="number">Number*</label>
+            <input type="tel" id="phone" name="phone" onkeyup="validatePhone()">
+            <span id="phone-error"></span></div>
+
+
+            <label for="date">Visit Date</label>
+            <input type="date" id="date">
+
+            <div class="form-content">
+            <label for="email">Your Email</label>
+             <input type="email" id="email" name= "email"  onkeyup="validateEmail()">
+             <span id="email-error"></span></div>
+             <div class="button">
+             <button type="submit"><a href="index.html">Book Appointment</a></button></div>
+        </form>
+
+        <script>
+            var nameError=document.getElementById('name-error');
+            var phoneError=document.getElementById('phone-error');
+            var emailError=document.getElementById('email-error');
+    
+            function validateName()
+            {
+            var name = document.getElementById('fullname').value;
+            if(name.length==0)
+            {
+                nameError.innerHTML='name required';
+                return false;
+            }
+            if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/))
+            {
+                nameError.innerHTML="Please enter full name";
+                return false;
+            }
+            nameError.innerHTML='<p>valid</p>';
+            return true;
+            }
+        
+            function validateEmail()
+        {
+            var email = document.getElementById('email').value;
+            if(email.length==0)
+            {
+                emailError.innerHTML='email required';
+                return false;
+            }
+            if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
+            {
+                emailError.innerHTML='email invalid';
+                return false;
+            }
+            emailError.innerHTML='<p>valid</p>';
+            return true;
+        }
+    
+            function validatePhone()
+        {
+            var phone = document.getElementById('phone').value;
+            if(phone.length==0)
+            {
+                phoneError.innerHTML='phone number required';
+                return false;
+            }
+            if(phone.length!=10)
+            {
+                phoneError.innerHTML='phone number should be 10 digits';
+                return false;
+            }
+            if(!phone.match(/^[0-9]{10}$/))
+            {
+                phoneError.innerHTML="phone number invalid";
+                return false;
+            }
+            phoneError.innerHTML='<p>valid</p>';
+            return true;
+        }
+        
+        
+        </script>
+    </div>
+</body>
+</html>

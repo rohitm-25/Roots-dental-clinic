@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="\viewport" content="width=device-width,initial-scale=1.0">
+        <title>Roots Dental Clinic | Sign Up</title>
+        <link rel="stylesheet" type= "text/css" href="style1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    </head>
+    <body>
+        <div class="image1">
+            <img src="logo_roots.png"
+            alt="logo"/>  
+            </div> 
+    <div class="image2">
+        <img src="first_image.jpeg"
+        alt="first_image"/>    
+    </div>
+    <div class="container">
+        <div class="intro-text"> 
+            <h2>Create Account</h2> 
+        </div>
+        <div class="signin">
+       
+           <div class="google">
+            <div class="image3">
+                <img src="google_logo.png"
+                alt="G"/>
+            </div>
+            <p>Sign Up With Google</p>
+        </div>
+        <div class="fb">
+            <div class="image4">
+                <img src="fb_logo.png"
+                alt="Fb"/>
+            </div>
+            <p>Sign Up With Facebook</p>
+        </div>
+        
+    </div>
+    <div class="OR">
+    <p>OR</p>
+    </div>
+    <form>
+        <div class="form-content" id="form-content">
+                 <input type="text" id="fullname" name="fullname" placeholder="Full Name" onkeyup="validateName()">
+                 <span id="name-error"></span></div>
+                 <div class="form-content">
+                  <input type="email" id="email" name= "email" placeholder="Email Address" onkeyup="validateEmail()">
+                  <span id="email-error"></span></div>
+                  <div class="form-content">
+                  <input type="tel" id="phone" name="phone" placeholder="Phone No" onkeyup="validatePhone()">
+                  <span id="phone-error"></span></div>
+                  <div class="form-content">
+                  <input type="password" id="password" name="password" placeholder="Password" onkeyup="validatePassword()">
+                  <span id="password-error"></span></div>
+
+        <div class="check-box">
+                    <input type="checkbox" id="check" />
+                     <label for "check">I have read and agree to the <a href="#">Terms & Privacy</a></label> 
+        </div>
+                   <button onclick="return validateForm()"  type="submit"><a>Create Account</a></button> 
+                   <span id="submit-error"></span>
+                   </form> 
+                   <p>Already have an account? <a href="./login_page.html">Login</a></p>
+     </div> 
+ 
+     
+     <script>
+        var nameError=document.getElementById('name-error');
+        var phoneError=document.getElementById('phone-error');
+        var emailError=document.getElementById('email-error');
+        var passwordError=document.getElementById('password-error');
+        var submitError=document.getElementById('submit-error');
+
+
+    
+      
+        function validateName()
+        {
+        var name = document.getElementById('fullname').value;
+        if(name.length==0)
+        {
+            nameError.innerHTML='name required';
+            return false;
+        }
+        if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/))
+        {
+            nameError.innerHTML="Please enter full name";
+            return false;
+        }
+        nameError.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+        }
+    
+        function validateEmail()
+    {
+        var email = document.getElementById('email').value;
+        if(email.length==0)
+        {
+            emailError.innerHTML='email required';
+            return false;
+        }
+        if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
+        {
+            emailError.innerHTML='email invalid';
+            return false;
+        }
+        emailError.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+    }
+
+        function validatePhone()
+    {
+        var phone = document.getElementById('phone').value;
+        if(phone.length==0)
+        {
+            phoneError.innerHTML='phone number required';
+            return false;
+        }
+        if(phone.length!=10)
+        {
+            phoneError.innerHTML='phone number should be 10 digits';
+            return false;
+        }
+        if(!phone.match(/^[0-9]{10}$/))
+        {
+            phoneError.innerHTML="phone number invalid";
+            return false;
+        }
+        phoneError.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+    }
+    function validatePassword()
+    {
+        var password = document.getElementById('password').value;
+        if(password.length==0)
+        {
+            passwordError.innerHTML='password required';
+            return false;
+        }
+        if(password.length<8)
+        {
+            passwordError.innerHTML='password should have atleast 8 characters';
+            return false;
+        } 
+        if(password.length>=15)
+        {
+        passwordError.innerHTML='password should have less than 15 characters';
+        return false;
+        }
+
+        passwordError.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+    }
+    function validateForm()
+    {
+        if(!validateEmail() | !validateName() | !validatePassword() | !validatePhone())
+        {
+            submitError.style.display = 'block';
+            submitError.innerHTML="Please fix error to create your account" ;
+            setTimeout(function(){submitError.style.display = 'none';},3000);
+            return false;
+        }
+    }
+    
+    
+    </script>
+    </body>
+    </html>
+    
+

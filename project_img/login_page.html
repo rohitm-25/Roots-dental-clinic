@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="\viewport" content="width=device-width,initial-scale=1.0">
+        <title>Roots Dental Clinic | Login</title>
+        <link rel="stylesheet" type= "text/css" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    </head>
+    <div class="container">
+        <div class="intro-text"> 
+            <h2>Sign In</h2> 
+
+        </div>
+        <div class="signin">
+       
+           <div class="google">
+            <div class="image3">
+                <img src="google_logo.png"
+                alt="G"/>
+            </div>
+            <p>Sign In With Google</p>
+        </div>
+        <div class="fb">
+            <div class="image4">
+                <img src="fb_logo.png"
+                alt="Fb"/>
+            </div>
+            <p>Sign In With Facebook</p>
+        </div>
+        
+    </div>
+    <div class="OR">
+    <p>OR</p>
+    </div>
+    <form>
+        <div class="form-content" id="form-content">       
+        <input type="email" id="email" name= "email" placeholder="Email Address" onkeyup="validateEmail()">
+        <span id="email-error"></span></div>
+        <div class="form-content">
+        <input type="password" id="password" name="password" placeholder="Password" onkeyup="validatePassword()">
+        <span id="password-error"></span></div>
+        <button onclick="return validateForm()"  type="submit"><a>Create Account</a></button> 
+        <span id="submit-error"></span> 
+                   </form> 
+                   <p>Create New Account? 
+                   <a href="./sign_up_page.html">SignUp</a></p>
+     </div> 
+     <div class="image1">
+        <img src="logo_roots.png"
+        alt="logo"/>    
+    </div>
+    <div class="image2">
+        <img src="first_image.jpeg"
+        alt="first_image"/>    
+    </div>
+ 
+
+    <script>
+
+        var emailError=document.getElementById('email-error');
+        var passwordError=document.getElementById('password-error');
+        var submitError=document.getElementById('submit-error');
+
+  
+      
+        function validateEmail()
+    {
+        var email = document.getElementById('email').value;
+        if(email.length==0)
+        {
+            emailError.innerHTML='email required';
+            return false;
+        }
+        if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
+        {
+            emailError.innerHTML='email invalid';
+            return false;
+        }
+        emailError.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+    }
+
+         function validatePassword()
+    {
+        var password = document.getElementById('password').value;
+        if(password.length==0)
+        {
+            passwordError.innerHTML='password required';
+            return false;
+        }
+        if(password.length<8)
+        {
+            passwordError.innerHTML='password should have atleast 8 characters';
+            return false;
+        } 
+        if(password.length>=15)
+        {
+        passwordError.innerHTML='password should have less than 15 characters';
+        return false;
+        }
+
+        passwordError.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+        return true;
+    }
+    function validateForm()
+    {
+        if(!validateEmail() | !validatePassword())
+        {
+            submitError.style.display = 'block';
+            submitError.innerHTML="Please fix error to create your account" ;
+            setTimeout(function(){submitError.style.display = 'none';},3000);
+            return false;
+        }
+    }
+    
+    
+    </script>
+
+    </body>
+</html>
+

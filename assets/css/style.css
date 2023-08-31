@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Rozha+One&display=swap');
+/* font-family: 'Bodoni Moda', serif;
+font-family: 'Rozha One', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    background: #8EC4DB;
+    background-blend-mode: lighten;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    justify-content: space-around;
+}
+
+nav ul li{
+    color: white;
+    font-family: 'Rozha One', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 34px;
+}
+
+header{
+    display:flex;
+    justify-content: space-around;
+    margin: 3em 0;
+    background: #3C9BB94D;
+
+}
+
+header div#text{
+    width: 40%;
+    text-align: center;
+    color: white;
+    font-family: 'Bodoni Moda', serif;
+}
+
+header div#text h1{
+    margin: .5em 0;
+}
+
+/* Section -- Doctors */
+
+section#doctors h1{
+text-align: center;
+color: white;
+font-size: 2em;
+font-family: 'Rozha One', serif;
+}
+
+section#doctors div#cards1{
+    display: flex;
+    margin: 3em 0;
+}
+
+section#doctors div#cards1 .card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rozha One', serif;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #3C9BB9 -86.24%, rgba(60, 155, 185, 0) 157.55%);
+    border-radius: 25%;
+}
+section#doctors div#cards1 a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rozha One', serif;
+    width: 15%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #3C9BB9 -86.24%, rgba(60, 155, 185, 0) 157.55%);
+    border-radius: 25%;
+}
+
+section#doctors div#cards1 .card1 .social{
+    display: flex;
+    padding: 0;
+    margin: 1em 0;
+}
+
+
+
+section#doctors div#cards1 .card1 img.avatar{
+    width: 7em;
+    margin: 1em auto;
+}
+
+/* Section - Speciality */
+section#speciality h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+}
+
+section#speciality .cards2 {
+    color: white;
+    font-family: 'Bodoni Moda', serif;
+    display: flex;
+    margin: 2em 2em;
+
+}
+
+
+section#speciality .cards2 a{
+    width: 15%;
+    background: #56AFCB;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section#speciality .cards2 a:last-child{
+    justify-content: center !important;
+}
+
+/* Section -- Reviews  */
+section#reviews h1{
+    text-align: center;
+    color: white;
+    font-family: 'Rozha One', serif;
+}
+
+.reviewbox{
+    display: flex;
+    margin: 2em;
+}
+
+.review{
+    background: #56AFCB;
+    width: 30%;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Bodoni Moda', serif;
+    padding: 1em;
+}
+
+.review h3{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+/* Footer */
+footer h1{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 2em 0 1em 0 ;
+    font-family: 'Bodoni Moda', serif;
+}
+.card1 img{
+    border-radius: 50%;
+}
